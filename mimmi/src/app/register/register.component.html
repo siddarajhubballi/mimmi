@@ -1,0 +1,21 @@
+<div class="main-div"> 
+    <br>
+    <br>
+    
+    <div class="heading"> 
+    <h1>Hello... Lets Get Started!</h1>
+    </div> 
+    <form class="box">
+        <h1>Register Here</h1>
+        <input [(ngModel)]="registerUserData.username" class="in1" name="username" type="text" placeholder="Enter username" required>
+        <input [(ngModel)]="registerUserData.password" class="in1" name="password" type="password" placeholder="Enter password" required>
+        <select class="se1" [(ngModel)]="artist" required> 
+            <option class="op1" value="user" [selected]="true" disabled>Select type</option>
+            <option class="op1" value="artist">Artist</option>
+            <option class="op1" value="user">User</option>
+        </select>
+        <input class="btn1" value="Register" type="submit" (click)="registerUser()">
+    </form>
+    <br>
+    <br>
+</div>

@@ -1,0 +1,13 @@
+<div class="main-div">
+    <br>
+    <br>
+    <h1>Hi there!</h1>
+    <form class="box">
+        <h1>Login</h1>
+        <input [(ngModel)]="loginUserData.username" class="in1" name="username" type="text" placeholder="Enter username" required>
+        <input [(ngModel)]="loginUserData.password" class="in1" name="password" type="password" placeholder="Enter password" required>
+        <input class="btn1" value="Login" type="submit" (click)="loginUser()">
+    </form>
+    <br>
+    <br>
+</div>
